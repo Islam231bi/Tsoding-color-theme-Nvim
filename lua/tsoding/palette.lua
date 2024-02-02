@@ -1,7 +1,7 @@
 local options = require("tsoding.config").options
 local variants = {
 	main = {
-		_nc = "#16141f",
+		_nc = "#181818",
 		base = "#191724",
 		surface = "#1f1d2e",
 		overlay = "#26233a",
