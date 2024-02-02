@@ -2,10 +2,7 @@ local options = require("tsoding.config").options
 local variants = {
 	main = {
 		_nc = "#181818",
-		base = "#181818",
-		surface = "#424242",
 		overlay = "#26233a",
-		muted = "#858484",
 		subtle = "#ff9b21",
 		text = "#e0def4",
 		love = "#eb6f92",
@@ -14,53 +11,22 @@ local variants = {
 		pine = "#31748f",
 		foam = "#9ccfd8",
 		iris = "#c4a7e7",
-		highlight_low = "#2c2525",
+		
+		base = "#181818", -- bg
+		surface = "#424242", -- dark grey
+        highlight_low = "#2c2525",
 		highlight_med = "#2c2525",
 		highlight_high = "#2c2525",
-		none = "NONE",
-	},
-	moon = {
-		_nc = "#181818",
-		base = "#181818",
-		surface = "#424242",
-		overlay = "#393552",
 		muted = "#858484",
-		subtle = "#ff9b21",
-		text = "#e0def4",
-		love = "#eb6f92",
-		gold = "#79bf46",
-		rose = "#ea9a97",
-		pine = "#3e8fb0",
-		foam = "#9ccfd8",
-		iris = "#c4a7e7",
-		highlight_low = "#2c2525",
-		highlight_med = "#2c2525",
-		highlight_high = "#2c2525",
+        orange = "#ff9b21", 
+        white = "#ffffff", 
+        green =  "#79bf46", 
+        yellow = "#ffdd33", 
 		none = "NONE",
-	},
-	dawn = {
-		_nc = "#181818",
-		base = "#181818",
-		surface = "#fffaf3",
-		overlay = "#f2e9e1",
-		muted = "#858484",
-		subtle = "#ff9b21",
-		text = "#575279",
-		love = "#b4637a",
-		gold = "#79bf46",
-		rose = "#d7827e",
-		pine = "#286983",
-		foam = "#56949f",
-		iris = "#907aa9",
-		highlight_low = "#2c2525",
-		highlight_med = "#2c2525",
-		highlight_high = "#2c2525",
-		none = "NONE",
-	},
-}
+	}
 
 if variants[options.variant] ~= nil then
 	return variants[options.variant]
 end
 
-return vim.o.background == "light" and variants.dawn or variants[options.dark_variant or "main"]
+return vim.o.background ==  variants[options.dark_variant or "main"]
