@@ -31,7 +31,7 @@ config.options = {
 
 	styles = {
 		bold = true,
-		italic = true,
+		--italic = true,
 		transparency = false,
 	},
 
