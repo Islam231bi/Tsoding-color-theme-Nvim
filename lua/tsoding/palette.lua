@@ -20,7 +20,7 @@ local variants = {
 		none = "NONE",
 	},
 	moon = {
-		_nc = "#181818"",
+		_nc = "#181818",
 		base = "#181818",
 		surface = "#2a273f",
 		overlay = "#393552",
