@@ -1,9 +1,9 @@
 local M = {}
-local config = require("rose-pine.config")
+local config = require("tsoding.config")
 
 local function set_highlights()
-	local utilities = require("rose-pine.utilities")
-	local palette = require("rose-pine.palette")
+	local utilities = require("tsoding.utilities")
+	local palette = require("tsoding.palette")
 	local styles = config.options.styles
 
 	local groups = {}
@@ -876,7 +876,7 @@ function M.colorscheme(variant)
 		vim.cmd("hi clear")
 		vim.cmd("syntax reset")
 	end
-	vim.g.colors_name = "rose-pine"
+	vim.g.colors_name = "tsoding"
 
 	set_highlights()
 end
