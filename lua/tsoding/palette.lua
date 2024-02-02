@@ -24,6 +24,7 @@ local variants = {
         yellow = "#ffdd33", 
 		none = "NONE",
 	}
+}
 
 if variants[options.variant] ~= nil then
 	return variants[options.variant]
