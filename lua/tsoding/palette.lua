@@ -30,4 +30,4 @@ if variants[options.variant] ~= nil then
 	return variants[options.variant]
 end
 
-return vim.o.background ==  variants[options.dark_variant or "main"]
+return vim.o.background ==  variants["main"]
