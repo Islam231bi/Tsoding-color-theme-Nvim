@@ -2,7 +2,7 @@
 --- https://github.com/NTBBloodbath/galaxyline.nvim
 ---
 --- @usage
---- local highlights = require("rose-pine.plugins.galaxyline")
+--- local highlights = require("tsoding.plugins.galaxyline")
 
 local p = require("tsoding.palette")
 
